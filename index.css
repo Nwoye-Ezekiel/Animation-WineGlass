@@ -11,7 +11,7 @@ html {
 body {
   position: relative;
   width: 100%;
-  background-image: linear-gradient(#702525b6, #702525ea, #702525);
+  background-image: linear-gradient( 109.6deg,  rgba(5,84,94,1) 16%, #bbb 91.1% );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -126,7 +126,7 @@ body {
   margin-top: -15px;
   z-index: -1;
   background-color: #d8e7eb60;
-  box-shadow: 0 0.4vh #d8e7eb60;
+  box-shadow: 0 0.6vh #d8e7eb60;
   background-image: linear-gradient(
       to right,
       transparent 11vh,
