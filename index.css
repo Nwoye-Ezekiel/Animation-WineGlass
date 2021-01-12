@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  width: 100%;
+  background-image: linear-gradient(#702525b6, #702525ea, #702525);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.glass {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.head {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.container {
+  position: absolute;
+  width: 320px;
+  height: 280px;
+  top: 30px;
+  left: -10px;
+  border: 7px #b3bdc1 solid;
+  background-color: #92a1a6;
+  overflow: hidden;
+  box-shadow: inset 0 0 30px 0 rgba(0, 0, 0, 0.1),
+    0 4px 10px 0 rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(
+      #90a0a5,
+      transparent 20% 99.8%,
+      #90a0a5 100%
+    ),
+    linear-gradient(
+      to right,
+      transparent 15%,
+      #758488 36% 44%,
+      #90a0a5 60%,
+      #ffffff4f 78% 95%,
+      #d8e7eb60 95%
+    );
+}
+.wine {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-color: rgb(112, 37, 37);
+  box-shadow: inset 0 0 30px 0 rgba(0, 0, 0, 0.1),
+    0 4px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.wine:before,
+.wine:after {
+  content: "";
+  position: absolute;
+  width: 290px;
+  height: 290px;
+  top: -100px;
+  background-color: rgb(112, 37, 37);
+}
+.wine:before {
+  border-radius: 45%;
+  background: #92a1a6;
+  -webkit-animation: flow 5s linear infinite,
+    rise-drop 5s ease-in-out alternate infinite;
+          animation: flow 5s linear infinite,
+    rise-drop 5s ease-in-out alternate infinite;
+}
+.wine:after {
+  border-radius: 35%;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-animation: flow 5s linear infinite,
+    rise-drop 5s ease-in-out alternate infinite;
+          animation: flow 5s linear infinite,
+    rise-drop 5s ease-in-out alternate infinite;
+}
+.leg {
+  margin-top: -10px;
+  height: 300px;
+  width: 15px;
+  background-color: #657a80;
+  border-radius: 5px;
+  background-image: linear-gradient(
+      #90a0a5,
+      transparent 20% 99.8%,
+      #90a0a5 100%
+    ),
+    linear-gradient(
+      to right,
+      transparent 15%,
+      #758488 36% 44%,
+      #90a0a5 60%,
+      #ffffff4f 78% 95%,
+      #d8e7eb60 95%
+    );
+}
+.foot {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: -15px;
+  z-index: -1;
+  background-color: #d8e7eb60;
+  box-shadow: 0 0.4vh #d8e7eb60;
+  background-image: linear-gradient(
+      to right,
+      transparent 11vh,
+      transparent 12vh,
+      transparent 13vh
+    ),
+    linear-gradient(
+      40deg,
+      transparent 5% 24%,
+      #0000001f 28% 36%,
+      #00000011 37% 44%,
+      transparent 50%,
+      #ffffff1c 56%,
+      #ffffff44 68%,
+      #ffffff1c 92%,
+      transparent
+    );
+}
+@-webkit-keyframes flow {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes flow {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rise-drop {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: -200px;
+  }
+}
+@keyframes rise-drop {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: -200px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .glass {
+    transform: scale(0.6);
+  }
+}
