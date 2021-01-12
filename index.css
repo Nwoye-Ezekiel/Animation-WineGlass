@@ -9,6 +9,7 @@ html {
   overflow: hidden;
 }
 body {
+  position: relative;
   width: 100%;
   background-image: linear-gradient(#702525b6, #702525ea, #702525);
   display: flex;
